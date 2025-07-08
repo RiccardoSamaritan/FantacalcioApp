@@ -1,0 +1,311 @@
+Team,Cod,Role,Name,Rating,Gf,Gs,Rp,Rs,Rf,Au,Amm,Esp,Ass
+Atalanta,4431,P,Carnesecchi,7,0,1,0,0,0,0,0,0,0
+Atalanta,554,D,Zappacosta,5,0,0,0,0,0,0,0,0,0
+Atalanta,787,D,Djimsiti,6,0,0,0,0,0,0,0,0,0
+Atalanta,2640,D,Kolasinac,6,0,0,0,0,0,0,1,0,0
+Atalanta,4887,D,Bellanova,6.5,0,0,0,0,0,0,0,0,1
+Atalanta,5354,D,Ruggeri,6,0,0,0,0,0,0,0,0,0
+Atalanta,5526,D,Scalvini,6,0,0,0,0,0,0,0,0,0
+Atalanta,6046,D,Hien,6*,0,0,0,0,0,0,0,0,0
+Atalanta,22,C,De Roon,5.5,0,0,0,0,0,0,0,0,0
+Atalanta,2077,C,Pasalic,5.5,0,0,0,0,0,0,0,0,0
+Atalanta,2766,C,Zaniolo,6*,0,0,0,0,0,0,0,0,0
+Atalanta,5119,C,Samardzic,6.5,0,0,0,0,0,0,0,0,0
+Atalanta,5792,C,Ederson D.s.,6.5,0,0,0,0,0,0,0,0,0
+Atalanta,4730,A,Lookman,6,0,0,0,0,0,0,0,0,0
+Atalanta,5995,A,De Ketelaere,6,0,0,0,0,0,0,0,0,0
+Atalanta,6228,A,Retegui,7,1,0,0,0,0,0,0,0,0
+Bologna,133,P,Skorupski,6,0,2,0,0,0,0,0,0,0
+Bologna,487,D,De Silvestri,6,0,0,0,0,0,0,0,0,0
+Bologna,2653,D,Lykogiannis,5,0,0,0,0,0,0,0,0,0
+Bologna,4982,D,Erlic,6*,0,0,0,0,0,0,0,0,0
+Bologna,5498,D,Casale,5.5,0,0,0,0,0,0,0,0,0
+Bologna,5678,D,Holm,6.5,1,0,0,0,0,0,0,0,0
+Bologna,6202,D,Beukema,5.5,0,0,0,0,0,0,0,0,0
+Bologna,788,C,Freuler,6,0,0,0,0,0,0,0,0,0
+Bologna,2167,C,Orsolini,6.5,0,0,0,0,0,0,0,0,1
+Bologna,5298,C,Pobega,6,0,0,0,0,0,0,0,0,0
+Bologna,5564,C,Ndoye,6,0,0,0,0,0,0,0,0,0
+Bologna,5858,C,Ferguson,6,0,0,0,0,0,0,0,0,0
+Bologna,6054,C,Moro N.,6.5,0,0,0,0,0,0,0,0,0
+Bologna,2765,A,Odgaard,6,0,0,0,0,0,0,0,0,0
+Bologna,6572,A,Castro S.,7,1,0,0,0,0,0,0,0,0
+Bologna,6643,A,Dallinga,6*,0,0,0,0,0,0,0,0,0
+Cagliari,574,P,Scuffet,6.5,0,1,0,0,0,0,0,0,0
+Cagliari,393,D,Luperto,6.5,0,0,0,0,0,0,0,0,0
+Cagliari,2181,D,Palomino,6,0,0,0,0,0,0,0,0,0
+Cagliari,4210,D,Mina,6.5,0,0,0,0,0,0,1,0,0
+Cagliari,4421,D,Augello,6,0,0,0,0,0,0,0,0,0
+Cagliari,4433,D,Zortea,7,1,0,0,0,0,0,0,0,0
+Cagliari,4461,D,Zappa,6,0,0,0,0,0,0,0,0,0
+Cagliari,5701,D,Obert,6.5,0,0,0,0,0,0,0,0,1
+Cagliari,440,C,Viola,6.5,0,0,0,0,0,0,0,0,0
+Cagliari,4870,C,Adopo,6,0,0,0,0,0,0,0,0,0
+Cagliari,4965,C,Marin,6*,0,0,0,0,0,0,0,0,0
+Cagliari,6232,C,Makoumbou,5.5,0,0,0,0,0,0,0,0,0
+Cagliari,6640,C,Felici,6.5,0,0,0,0,0,0,0,0,1
+Cagliari,247,A,Pavoletti,6*,0,0,0,0,0,0,0,0,0
+Cagliari,1939,A,Lapadula,6,0,0,0,0,0,0,0,0,0
+Cagliari,4359,A,Piccoli,7,1,0,0,0,0,0,1,0,0
+Como,6966,P,Butez,6.5,0,2,0,0,0,0,0,0,0
+Como,418,D,Goldaniga,5.5,0,0,0,0,0,0,0,0,0
+Como,6230,D,Dossena,5.5,0,0,0,0,0,0,0,0,0
+Como,6893,D,Kempf,6,0,0,0,0,0,0,1,0,0
+Como,6896,D,Van Der Brempt,5.5,0,0,0,0,0,0,0,0,0
+Como,376,C,Verdi,6*,0,0,0,0,0,0,0,0,0
+Como,4486,C,Strefezza,6,0,0,0,0,0,0,0,0,0
+Como,5036,C,Caqueret,6.5,0,0,0,0,0,0,0,0,1
+Como,5559,C,Da Cunha,6.5,0,0,0,0,0,0,0,0,0
+Como,6151,C,Perrone,6,0,0,0,0,0,0,0,0,0
+Como,6676,C,Engelhardt,6,0,0,0,0,0,0,0,0,0
+Como,6815,C,Fadera,6,0,0,0,0,0,0,0,0,0
+Como,6967,C,Diao,7,1,0,0,0,0,0,0,0,0
+Como,441,A,Belotti,6*,0,0,0,0,0,0,0,0,0
+Como,2155,A,Cutrone,6,0,0,0,0,0,0,0,0,0
+Como,6657,A,Gabrielloni,6*,0,0,0,0,0,0,0,0,0
+Empoli,6125,P,Vasquez D.,4.5,0,1,0,0,0,0,0,0,0
+Empoli,770,D,Pezzella Giu.,7,0,0,0,0,0,0,0,0,0
+Empoli,5010,D,Ismajli,6,0,0,0,0,0,0,0,0,0
+Empoli,5718,D,Viti,6,0,0,0,0,0,0,1,0,0
+Empoli,5804,D,Cacace,6*,0,0,0,0,0,0,0,0,0
+Empoli,5856,D,Sambia,6*,0,0,0,0,0,0,0,0,0
+Empoli,6537,D,Goglichidze,6.5,0,0,0,0,0,0,0,0,0
+Empoli,6809,D,Marianucci,6*,0,0,0,0,0,0,0,0,0
+Empoli,27,C,Grassi,6,0,0,0,0,0,0,0,0,0
+Empoli,4498,C,Henderson L.,6*,0,0,0,0,0,0,0,0,0
+Empoli,4992,C,Gyasi,6,0,0,0,0,0,0,0,0,0
+Empoli,5457,C,Maleh,6,0,0,0,0,0,0,0,0,0
+Empoli,6889,C,Anjorin,7,0,0,0,0,0,0,0,0,0
+Empoli,4463,A,Esposito Se.,7,1,0,0,0,0,0,1,0,0
+Empoli,4923,A,Colombo,6.5,0,0,0,0,0,0,0,0,1
+Empoli,6011,A,Ekong,6*,0,0,0,0,0,0,0,0,0
+Fiorentina,2521,P,De Gea,6,0,3,0,0,0,0,0,0,0
+Fiorentina,2160,D,Gosens,6,0,0,0,0,0,0,0,0,0
+Fiorentina,4378,D,Ranieri L.,5,0,0,0,0,0,0,0,0,0
+Fiorentina,5449,D,Parisi,5.5,0,0,0,0,0,0,0,0,0
+Fiorentina,5885,D,Dodo',5,0,0,0,0,0,0,0,0,0
+Fiorentina,6495,D,Comuzzo,5,0,0,0,0,0,0,0,0,0
+Fiorentina,6890,D,Moreno M.,5,0,0,0,0,0,0,0,0,0
+Fiorentina,333,C,Cataldi,6*,0,0,0,0,0,0,0,0,0
+Fiorentina,1933,C,Mandragora,6,0,0,0,0,0,0,0,0,0
+Fiorentina,2839,C,Sottil,6,0,0,0,0,0,0,0,0,0
+Fiorentina,5875,C,Adli,5.5,0,0,0,0,0,0,0,0,0
+Fiorentina,5878,C,Colpani,5.5,0,0,0,0,0,0,0,0,0
+Fiorentina,6804,C,Richardson,6,0,0,0,0,0,0,0,0,0
+Fiorentina,2097,A,Kean,5.5,0,0,0,0,0,0,0,0,0
+Fiorentina,2762,A,Kouame',6*,0,0,0,0,0,0,0,0,0
+Fiorentina,6409,A,Beltran L.,5,0,0,0,0,0,0,0,0,0
+Genoa,188,P,Leali,6.5,0,0,0,0,0,0,0,0,0
+Genoa,2285,D,Bani,6,0,0,0,0,0,0,0,0,0
+Genoa,2593,D,Martin,6,0,0,0,0,0,0,0,0,0
+Genoa,5514,D,Vasquez,7,0,0,0,0,0,0,0,0,0
+Genoa,5527,D,Zanoli,6,0,0,0,0,0,0,0,0,0
+Genoa,5739,D,De Winter,5.5,0,0,0,0,0,0,0,0,0
+Genoa,170,C,Badelj,6,0,0,0,0,0,0,0,0,0
+Genoa,4404,C,Thorsby,5,0,0,0,0,0,0,0,0,0
+Genoa,5791,C,Frendrup,6.5,0,0,0,0,0,0,0,0,0
+Genoa,5813,C,Miretti,5.5,0,0,0,0,0,0,0,0,0
+Genoa,6917,C,Masini,6*,0,0,0,0,0,0,0,0,0
+Genoa,6922,C,Kasa,5.5,0,0,0,0,0,0,1,0,0
+Genoa,2038,A,Pinamonti,6.5,0,0,0,0,0,0,0,0,0
+Genoa,6164,A,Vitinha O.,6,0,0,0,0,0,0,0,0,0
+Genoa,6822,A,Ekhator,5.5,0,0,0,0,0,0,0,0,0
+Inter,2428,P,Sommer,6.5,0,2,0,0,0,0,0,0,0
+Inter,254,D,Dimarco,6.5,0,0,0,0,0,0,0,0,1
+Inter,322,D,De Vrij,5.5,0,0,0,0,0,0,0,0,0
+Inter,2120,D,Bastoni,6.5,0,0,0,0,0,0,0,0,0
+Inter,2525,D,Darmian,6,0,0,0,0,0,0,0,0,0
+Inter,4177,D,Pavard,6,0,0,0,0,0,0,0,0,0
+Inter,5513,D,Dumfries,7,1,0,0,0,0,0,0,0,0
+Inter,5877,D,Carlos Augusto,6,0,0,0,0,0,0,0,0,0
+Inter,152,C,Zielinski,5.5,0,0,0,0,0,0,0,0,0
+Inter,1870,C,Barella,5.5,0,0,0,0,0,0,0,0,0
+Inter,2848,C,Frattesi,5.5,0,0,0,0,0,0,0,0,0
+Inter,5719,C,Asllani,5.5,0,0,0,0,0,0,0,0,0
+Inter,6532,C,Buchanan T.,6*,0,0,0,0,0,0,0,0,0
+Inter,2764,A,Martinez L.,7,1,0,0,0,0,0,0,0,0
+Inter,4871,A,Thuram,6.5,0,0,0,0,0,0,0,0,0
+Inter,6628,A,Taremi,5.5,0,0,0,0,0,0,0,0,0
+Juventus,5876,P,Di Gregorio,6.5,0,1,0,0,0,0,0,0,0
+Juventus,4976,D,Kalulu,7.5,1,0,0,0,0,0,0,0,0
+Juventus,5520,D,Cambiaso,5,0,0,0,0,0,0,0,0,0
+Juventus,5831,D,Gatti,7,0,0,0,0,0,0,0,0,0
+Juventus,6802,D,Savona,5,0,0,0,0,0,0,0,0,0
+Juventus,827,C,Locatelli,6.5,0,0,0,0,0,0,0,0,0
+Juventus,4465,C,Fagioli,6*,0,0,0,0,0,0,0,0,0
+Juventus,4911,C,Douglas Luiz,6,0,0,0,0,0,0,0,0,0
+Juventus,4973,C,McKennie,7,0,0,0,0,0,0,0,0,1
+Juventus,5562,C,Thuram K.,6.5,0,0,0,0,0,0,0,0,0
+Juventus,5685,C,Koopmeiners,6,0,0,0,0,0,0,0,0,0
+Juventus,4179,A,Gonzalez N.,6.5,0,0,0,0,0,0,0,0,0
+Juventus,6434,A,Yildiz,5.5,0,0,0,0,0,0,0,0,0
+Juventus,6833,A,Mbangula,6*,0,0,0,0,0,0,1,0,0
+Lazio,2814,P,Provedel,6,0,2,0,0,0,0,0,0,0
+Lazio,460,D,Romagnoli,5.5,0,0,0,0,0,0,0,0,0
+Lazio,2188,D,Marusic,6,0,0,0,0,0,0,0,0,0
+Lazio,2263,D,Lazzari,6*,0,0,0,0,0,0,0,0,0
+Lazio,2728,D,Pellegrini Lu.,6*,0,0,0,0,0,0,0,0,0
+Lazio,5620,D,Tavares N.,5.5,0,0,0,0,0,0,0,0,0
+Lazio,5833,D,Gila,5.5,0,0,0,0,0,0,1,0,0
+Lazio,632,C,Zaccagni,5.5,0,0,0,0,0,0,1,0,0
+Lazio,4186,C,Guendouzi,5.5,0,0,0,0,0,0,0,0,0
+Lazio,4459,C,Rovella,5.5,0,0,0,0,0,0,1,0,0
+Lazio,5919,C,Tchaouna,5.5,0,0,0,0,0,0,0,0,0
+Lazio,6629,C,Dele-Bashiru,6.5,0,0,0,0,0,0,0,0,0
+Lazio,5672,A,Dia,5.5,0,0,0,0,0,0,1,0,0
+Lazio,6226,A,Castellanos,5.5,0,0,0,0,0,0,0,1,0
+Lazio,6398,A,Isaksen,6,0,0,0,0,0,0,0,0,0
+Lazio,6556,A,Noslin,6*,0,0,0,0,0,0,0,0,0
+Lecce,2134,P,Falcone,6,0,0,0,0,0,0,0,0,0
+Lecce,4502,D,Gallo,6,0,0,0,0,0,0,0,0,0
+Lecce,5626,D,Guilbert,6.5,0,0,0,0,0,0,0,0,0
+Lecce,5835,D,Baschirotto,6.5,0,0,0,0,0,0,0,0,0
+Lecce,6257,D,Dorgu,6.5,0,0,0,0,0,0,0,0,0
+Lecce,6883,D,Jean,6.5,0,0,0,0,0,0,0,0,0
+Lecce,5504,C,Coulibaly L.,6.5,0,0,0,0,0,0,0,0,0
+Lecce,5872,C,Helgason,6,0,0,0,0,0,0,0,0,0
+Lecce,6222,C,Rafia,6,0,0,0,0,0,0,0,0,0
+Lecce,6459,C,Karlsson,6*,0,0,0,0,0,0,0,0,0
+Lecce,6633,C,Pierret,6.5,0,0,0,0,0,0,0,0,0
+Lecce,6634,C,Tete Morente,5.5,0,0,0,0,0,0,0,0,0
+Lecce,186,A,Rebic,6*,0,0,0,0,0,0,0,0,0
+Lecce,6435,A,Krstovic,6.5,0,0,0,0,0,0,0,0,0
+Lecce,6549,A,Pierotti,5.5,0,0,0,0,0,0,0,0,0
+Milan,4312,P,Maignan,6.5,0,1,0,0,0,0,0,0,0
+Milan,4292,D,Hernandez T.,6.5,1,0,0,0,0,0,0,0,0
+Milan,4401,D,Gabbia,6,0,0,0,0,0,0,0,0,0
+Milan,4751,D,Tomori,6,0,0,0,0,0,0,0,0,0
+Milan,4816,D,Emerson Royal,6.5,0,0,0,0,0,0,0,0,0
+Milan,6055,D,Thiaw,5.5,0,0,0,0,0,0,1,0,0
+Milan,6531,D,Jimenez A.,6,0,0,0,0,0,0,1,0,0
+Milan,2423,C,Pulisic,5.5,0,0,0,0,0,0,0,0,0
+Milan,2818,C,Bennacer,5.5,0,0,0,0,0,0,1,0,0
+Milan,4686,C,Fofana Y.,6,0,0,0,0,0,0,0,0,0
+Milan,5295,C,Musah,5.5,0,0,0,0,0,0,1,0,0
+Milan,6224,C,Reijnders,6,0,0,0,0,0,0,0,0,0
+Milan,313,A,Morata,5.5,0,0,0,0,0,0,1,0,0
+Milan,2544,A,Abraham,6.5,0,0,0,0,0,0,0,0,1
+Milan,4510,A,Leao,7,1,0,0,0,0,0,1,0,0
+Milan,6519,A,Camarda,6,0,0,0,0,0,0,0,0,0
+Monza,4867,P,Turati,6.5,0,2,0,0,0,0,0,0,0
+Monza,226,D,Izzo,6,0,0,0,0,0,0,0,0,0
+Monza,253,D,D'Ambrosio,4.5,0,0,0,0,0,0,0,1,0
+Monza,729,D,Pereira P.,5.5,0,0,0,0,0,0,0,0,0
+Monza,4958,D,Caldirola,5.5,0,0,0,0,0,0,0,0,0
+Monza,5838,D,Birindelli,5.5,0,0,0,0,0,0,0,0,0
+Monza,1978,C,Sensi,6,0,0,0,0,0,0,0,0,0
+Monza,4896,C,Maldini,5.5,0,0,0,0,0,0,0,0,0
+Monza,5286,C,Akpa Akpro,5.5,0,0,0,0,0,0,0,0,0
+Monza,5516,C,Bianco,5.5,0,0,0,0,0,0,1,0,0
+Monza,5880,C,Ciurria,5.5,0,0,0,0,0,0,0,0,0
+Monza,5992,C,Bondo,5.5,0,0,0,0,0,0,1,0,0
+Monza,6920,C,Martins K.,6*,0,0,0,0,0,0,0,0,0
+Monza,1958,A,Caprari,6.5,0,0,0,0,1,0,0,0,0
+Monza,5471,A,Djuric,5.5,0,0,0,0,0,0,0,0,0
+Monza,5882,A,Mota,5.5,0,0,0,0,0,0,0,0,0
+Napoli,572,P,Meret,6.5,0,0,0,0,0,0,0,0,0
+Napoli,256,D,Juan Jesus,6.5,0,0,0,0,0,0,0,0,0
+Napoli,1852,D,Spinazzola,6,0,0,0,0,0,0,0,0,0
+Napoli,2816,D,Di Lorenzo,5.5,0,0,0,0,0,0,1,0,0
+Napoli,4409,D,Rrahmani,7,0,0,0,0,0,0,0,0,0
+Napoli,5481,D,Mazzocchi,6*,0,0,0,0,0,0,0,0,0
+Napoli,5840,D,Olivera,6.5,0,0,0,0,0,0,0,0,0
+Napoli,4220,C,Zambo Anguissa,7,0,0,0,0,0,0,0,0,0
+Napoli,4287,C,Lobotka,6.5,0,0,0,0,0,0,0,0,0
+Napoli,4777,C,McTominay,7,1,0,0,0,0,0,0,0,0
+Napoli,5131,C,Gilmour,6*,0,0,0,0,0,0,0,0,0
+Napoli,6831,C,Neres,7.5,1,0,0,0,0,0,0,0,0
+Napoli,2061,A,Simeone,6,0,0,0,0,0,0,0,0,0
+Napoli,2531,A,Lukaku,7,0,0,0,0,1,0,0,0,0
+Napoli,4371,A,Raspadori,6*,0,0,0,0,0,0,0,0,0
+Napoli,6145,A,Ngonge,6*,0,0,0,0,0,0,0,0,0
+Parma,6641,P,Suzuki,7.5,0,0,0,0,0,0,0,0,0
+Parma,5307,D,Valenti,5.5,0,0,0,0,0,0,0,0,0
+Parma,5353,D,Balogh,6,0,0,0,0,0,0,0,0,0
+Parma,5862,D,Valeri,6,0,0,0,0,0,0,0,0,0
+Parma,6664,D,Delprato,6,0,0,0,0,0,0,1,0,0
+Parma,4423,C,Hernani,6,0,0,0,0,0,0,0,0,0
+Parma,5319,C,Sohm,6,0,0,0,0,0,0,0,0,0
+Parma,6821,C,Hainaut,6,0,0,0,0,0,0,0,0,0
+Parma,6898,C,Keita M.,6,0,0,0,0,0,0,0,0,0
+Parma,5322,A,Mihaila,6,0,0,0,0,0,0,0,0,0
+Parma,5500,A,Cancellieri,6,0,0,0,0,0,0,0,0,0
+Parma,6207,A,Almqvist,6,0,0,0,0,0,0,0,0,0
+Parma,6667,A,Benedyczak,5.5,0,0,0,0,0,0,0,0,0
+Parma,6669,A,Bonny,6.5,0,0,0,0,0,0,0,0,0
+Parma,6914,A,Haj Mohamed,6,0,0,0,0,0,0,0,0,0
+Roma,5841,P,Svilar,7,0,0,0,0,0,0,0,0,0
+Roma,2296,D,Mancini,6,0,0,0,0,0,0,0,0,0
+Roma,2406,D,Hummels,6,0,0,0,0,0,0,0,0,0
+Roma,4317,D,N'Dicka,6.5,0,0,0,0,0,0,1,0,0
+Roma,4772,D,Angelino,6.5,0,0,0,0,0,0,0,0,0
+Roma,468,C,Paredes,7,0,0,0,0,0,0,1,0,0
+Roma,530,C,Pellegrini Lo.,7,1,0,0,0,0,0,0,0,0
+Roma,795,C,El Shaarawy,6,0,0,0,0,0,0,0,0,0
+Roma,4892,C,Saelemaekers,7.5,1,0,0,0,0,0,1,0,1
+Roma,5589,C,Kone' M.,6.5,0,0,0,0,0,0,0,0,0
+Roma,5823,C,Baldanzi,6,0,0,0,0,0,0,0,0,0
+Roma,6190,C,Pisilli,6,0,0,0,0,0,0,0,0,0
+Roma,309,A,Dybala,6.5,0,0,0,0,0,0,1,0,0
+Roma,5311,A,Shomurodov,6,0,0,0,0,0,0,0,0,0
+Roma,6675,A,Dovbyk,6,0,0,0,0,0,0,0,0,0
+Torino,2170,P,Milinkovic-Savic V.,6.5,0,0,0,0,0,0,0,0,0
+Torino,4385,D,Lazaro,6.5,0,0,0,0,0,0,0,0,0
+Torino,4665,D,Maripan,6.5,0,0,0,0,0,0,0,0,0
+Torino,4994,D,Vojvoda,6,0,0,0,0,0,0,0,0,0
+Torino,6426,D,Pedersen,6,0,0,0,0,0,0,0,0,0
+Torino,6642,D,Coco,6,0,0,0,0,0,0,0,0,0
+Torino,6820,D,Sosa B.,5.5,0,0,0,0,0,0,0,0,0
+Torino,2008,C,Linetty,6,0,0,0,0,0,0,1,0,0
+Torino,4890,C,Tameze,6,0,0,0,0,0,0,0,0,0
+Torino,5007,C,Ilic,5.5,0,0,0,0,0,0,0,0,0
+Torino,5453,C,Ricci S.,6,0,0,0,0,0,0,1,0,0
+Torino,5687,C,Vlasic,6.5,0,0,0,0,0,0,0,0,0
+Torino,479,A,Sanabria,6*,0,0,0,0,0,0,0,0,0
+Torino,2325,A,Karamoh,6,0,0,0,0,0,0,0,0,0
+Torino,6646,A,Adams C.,5.5,0,0,0,0,0,0,0,0,0
+Torino,6827,A,Njie,5.5,0,0,0,0,0,0,0,0,0
+Udinese,6842,P,Sava,6.5,0,0,0,0,0,0,0,0,0
+Udinese,5555,D,Kamara H.,5.5,0,0,0,0,0,0,0,0,0
+Udinese,5847,D,Bijol,6,0,0,0,0,0,0,0,0,0
+Udinese,6047,D,Ehizibue,6,0,0,0,0,0,0,0,0,0
+Udinese,6485,D,Kristensen T.,5.5,0,0,0,0,0,0,0,0,0
+Udinese,6956,D,Solet,6,0,0,0,0,0,0,0,0,0
+Udinese,5850,C,Lovric,6,0,0,0,0,0,0,0,0,0
+Udinese,6481,C,Payero,5.5,0,0,0,0,0,0,0,0,0
+Udinese,6680,C,Karlstrom,6,0,0,0,0,0,0,1,0,0
+Udinese,6684,C,Ekkelenkamp,6,0,0,0,0,0,0,0,0,0
+Udinese,6900,C,Rui Modesto,6*,0,0,0,0,0,0,0,0,0
+Udinese,6908,C,Atta,6.5,0,0,0,0,0,0,0,0,0
+Udinese,2369,A,Thauvin,6,0,0,0,0,0,0,0,0,0
+Udinese,2475,A,Sanchez,6*,0,0,0,0,0,0,0,0,0
+Udinese,6215,A,Lucca,6,0,0,0,0,0,0,1,0,0
+Udinese,6653,A,Bravo,6*,0,0,0,0,0,0,0,0,0
+Venezia,6248,P,Stankovic F.,7,0,1,0,0,0,0,0,0,0
+Venezia,1952,D,Zampano,5.5,0,0,0,0,0,0,0,0,0
+Venezia,5447,D,Altare,6,0,0,0,0,0,0,0,0,0
+Venezia,6149,D,Carboni F.,6,0,0,0,0,0,0,0,0,0
+Venezia,6672,D,Idzes,6.5,0,0,0,0,0,0,0,0,0
+Venezia,6673,D,Sverko,5,0,0,0,0,0,0,1,0,0
+Venezia,4349,C,Nicolussi Caviglia,6.5,0,0,0,0,0,0,0,0,0
+Venezia,5507,C,Busio,6,0,0,0,0,0,0,0,0,0
+Venezia,6020,C,Ellertsson,5.5,0,0,0,0,0,0,0,0,0
+Venezia,6218,C,Oristanio,6,0,0,0,0,0,0,0,0,0
+Venezia,6674,C,Andersen M.K.,6,0,0,0,0,0,0,0,0,0
+Venezia,6904,C,Yeboah J.,5.5,0,0,0,0,0,0,0,0,0
+Venezia,5079,A,Pohjanpalo,7,1,0,0,0,0,0,0,0,0
+Verona,4957,P,Montipo',7,0,0,0,0,0,0,0,0,0
+Verona,2769,D,Magnani,6*,0,0,0,0,0,0,0,0,0
+Verona,4493,D,Dawidowicz,6,0,0,0,0,0,0,0,0,0
+Verona,5532,D,Bradaric,6,0,0,0,0,0,0,0,0,0
+Verona,5554,D,Daniliuc,6*,0,0,0,0,0,0,0,0,0
+Verona,5764,D,Coppola D.,6,0,0,0,0,0,0,0,0,0
+Verona,6480,D,Tchatchoua,6,0,0,0,0,0,0,1,0,0
+Verona,6631,D,Ghilardi,6,0,0,0,0,0,0,0,0,0
+Verona,4342,C,Duda,6,0,0,0,0,0,0,0,0,0
+Verona,6191,C,Belahyane,6,0,0,0,0,0,0,0,0,0
+Verona,6458,C,Serdar,5,0,0,0,0,0,0,0,1,0
+Verona,6486,C,Suslov,6,0,0,0,0,0,0,0,0,0
+Verona,6159,A,Sarr A.,5.5,0,0,0,0,0,0,0,0,0
+Verona,6630,A,Mosquera,6,0,0,0,0,0,0,0,0,0
+Verona,6801,A,Tengstedt,6,0,0,0,0,0,0,0,0,0
