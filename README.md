@@ -51,6 +51,55 @@ If two or more teams finish with the same number of points in the standings, the
   - Goal difference
   - Head-to-head ranking (direct encounters)
 
+## Data Retrieval 
+
+Download Excel files from [Fantacalcio.it](https://www.fantacalcio.it/voti-fantacalcio-serie-a). Be sure to select the season that you want to simulate and to download data
+for each matchday from 1 to 38.\
+Put the downloaded files into the "data" folder in order to be ready for the data processing.
+
+## Data Processing
+
+### Excel to CSV Converter
+
+This project includes a Python script (`data/dataprocesser.py`) to convert the official Excel files from Fantacalcio.it into clean CSV format for easier data processing.
+
+#### Features:
+- **Automatic team detection**: Identifies team names from the Excel structure.
+- **Player-only extraction**: Filters out headers, titles, and coaches (excludes "ALL" role).
+- **Complete data preservation**: Extracts all player statistics (goals, assists, cards, etc.).
+- **Auto-cleanup**: Moves processed Excel files to trash after successful conversion.
+#### Usage:
+
+1. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+2. **Batch conversion (Linux/macOS):**
+   ```bash
+   #!/bin/bash
+   for i in {1..38}; do
+       python3 dataprocesser.py Voti_Fantacalcio_Stagione_2024_25_Giornata_${i}.xlsx giornata${i}.csv
+   done
+   ```
+
+3. **Batch conversion (Windows):**
+   ```batch
+   @echo off
+   for /L %%i in (1,1,38) do (
+       python3 dataprocesser.py Voti_Fantacalcio_Stagione_2024_25_Giornata_%%{i}.xlsx giornata%%i.csv
+   )
+   ```
+
+#### Example Output:
+```csv
+Team,Cod,Role,Name,Rating,Gf,Gs,Rp,Rs,Rf,Au,Amm,Esp,Ass
+Atalanta,2792,P,Musso,6,0,0,0,0,0,0,0,0,0
+Atalanta,554,D,Zappacosta,6.5,0,0,0,0,0,0,0,0,0
+Atalanta,4947,C,Brescianini,8,2,0,0,0,0,0,0,0,0
+Bologna,133,P,Skorupski,6.5,0,0,0,0,0,0,0,0,0
+```
+
 
   
   
