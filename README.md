@@ -1,8 +1,6 @@
 # Fantacalcio App
 
-The idea behind this project is to scrape data from [Fantacalcio Official Website](https://www.fantacalcio.it/voti-fantacalcio-serie-a) and use it to implement a python software able to 
-simulate a Fantacalcio season. The app takes as input a given number of teams (usually a multiply of 2 in a range between 8 and 12) with 25 players (3 goalkeepers, 8 defenders, 8 midfielders and 6 forwards), which is the most common format 
-used in the game (anyway it could be changed as you prefer). 
+The idea behind this project is to scrape data from [Fantacalcio Official Website](https://www.fantacalcio.it/voti-fantacalcio-serie-a) and use it to implement a python software able to simulate a Fantacalcio season. The app takes as input a given number of teams (usually a multiple of 2 in a range between 8 and 12) with 25 players (3 goalkeepers, 8 defenders, 8 midfielders and 6 forwards), which is the most common format used in the game (anyway it could be changed as you prefer). 
 
 ## Game Rules
 
@@ -31,7 +29,7 @@ To simplify the implementation, the following rules have been applied to fantasy
      - If the average rating is ≥ 6.75 and < 7, bonus +5
      - If the average rating is ≥ 7 and < 7.25, bonus +6
      - If the average rating is ≥ 7.25, bonus +7
-    The modified is only applied only if 4 defenders are fielded.
+    The modifier is applied only if 4 defenders are fielded.
 
   - The goal thresholds are as follows:
      - 1st goal – 66 points
@@ -53,21 +51,22 @@ If two or more teams finish with the same number of points in the standings, the
 
 ## Data Retrieval 
 
-Download Excel files from [Fantacalcio.it](https://www.fantacalcio.it/voti-fantacalcio-serie-a). Be sure to select the season that you want to simulate and to download data
-for each matchday from 1 to 38.\
+Download Excel files from [Fantacalcio.it](https://www.fantacalcio.it/voti-fantacalcio-serie-a). Be sure to select the season that you want to simulate and to download data for each matchday from 1 to 38.\
 Put the downloaded files into the "data" folder in order to be ready for the data processing.
 
 ## Data Processing
 
 ### Excel to CSV Converter
 
-This project includes a Python script (`data/dataprocesser.py`) to convert the official Excel files from Fantacalcio.it into clean CSV format for easier data processing.
+This project includes a Python script (`data/dataprocessor.py`) to convert the official Excel files from Fantacalcio.it into clean CSV format for easier data processing.
 
 #### Features:
 - **Automatic team detection**: Identifies team names from the Excel structure.
+- **Matchday extraction**: Automatically extracts the matchday number from the filename.
 - **Player-only extraction**: Filters out headers, titles, and coaches (excludes "ALL" role).
 - **Complete data preservation**: Extracts all player statistics (goals, assists, cards, etc.).
 - **Auto-cleanup**: Moves processed Excel files to trash after successful conversion.
+- **Output**: Saves the cleaned data in a CSV file named `matchday{i}.csv`, where `i` is the matchday number.
 #### Usage:
 
 1. **Install dependencies:**
@@ -79,7 +78,7 @@ This project includes a Python script (`data/dataprocesser.py`) to convert the o
    ```bash
    #!/bin/bash
    for i in {1..38}; do
-       python3 dataprocesser.py Voti_Fantacalcio_Stagione_2024_25_Giornata_${i}.xlsx giornata${i}.csv
+       python3 dataprocessor.py Voti_Fantacalcio_Stagione_2024_25_Giornata_${i}.xlsx
    done
    ```
 
@@ -87,7 +86,7 @@ This project includes a Python script (`data/dataprocesser.py`) to convert the o
    ```batch
    @echo off
    for /L %%i in (1,1,38) do (
-       python3 dataprocesser.py Voti_Fantacalcio_Stagione_2024_25_Giornata_%%{i}.xlsx giornata%%i.csv
+       python3 dataprocessor.py Voti_Fantacalcio_Stagione_2024_25_Giornata_%%{i}.xlsx
    )
    ```
 

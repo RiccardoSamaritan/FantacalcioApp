@@ -1,6 +1,7 @@
 import pandas as pd
 import sys
 import os
+import re
 from pathlib import Path
 from send2trash import send2trash
 
@@ -42,7 +43,6 @@ def excel_to_csv_players_only(excel_file_path, output_csv_path=None):
                     'Voti Fantacalcio', 'www.fantacalcio.it', 
                     'QUESTO FILE', 'USO PERSONALE'])):
                 current_team = row_data[0]
-                print(f"Found team: {current_team}")
                 continue
             
             if (len(row_data) >= 4 and 
@@ -81,19 +81,8 @@ def excel_to_csv_players_only(excel_file_path, output_csv_path=None):
         
         players_df.to_csv(output_csv_path, index=False, encoding='utf-8')
         
-        print(f"Conversion completed!")
-        print(f"Total players extracted: {len(players_df)}")
-        print(f"Teams present: {players_df['Team'].nunique()}")
-        print(f"CSV file saved to: {output_csv_path}")
-        
-        print("\nPreview of first 5 players:")
-        print(players_df.head())
-        
-        try:
-            send2trash(excel_file_path)
-            print(f"Excel file moved to trash: {excel_file_path}")
-        except Exception as e:
-            print(f"Unable to move Excel file to trash: {str(e)}")
+
+        send2trash(excel_file_path)
         
         return str(output_csv_path)
         
@@ -101,27 +90,45 @@ def excel_to_csv_players_only(excel_file_path, output_csv_path=None):
         print(f"Error during conversion: {str(e)}")
         return None
 
-def main():
 
-    if len(sys.argv) < 2:
-        print("Usage: python converter.py <excel_file.xlsx> [output.csv]")
-        print("Example: python converter.py giornata1.xlsx")
-        return
+def extract_matchday_number(filename):
+    """
+    Extract matchday number from filename.
+    Supports patterns like:
+    - Voti_Fantacalcio_Stagione_2024_25_Giornata_1.xlsx
+    - giornata1.xlsx
+    - matchday1.xlsx
+    - Any filename containing 'Giornata_N' or 'giornata' followed by number
+    """
+    # Try different patterns
+    patterns = [
+        r'Giornata_(\d+)',  # Voti_Fantacalcio_Stagione_2024_25_Giornata_1.xlsx
+        r'giornata(\d+)',   # giornata1.xlsx
+        r'matchday(\d+)',   # matchday1.xlsx
+        r'(\d+)'           # fallback: any number in filename
+    ]
+    
+    for pattern in patterns:
+        match = re.search(pattern, filename, re.IGNORECASE)
+        if match:
+            return int(match.group(1))
+    
+    return None
+
+
+def main():
     
     excel_file = sys.argv[1]
-    output_file = sys.argv[2] if len(sys.argv) > 2 else None
     
     if not os.path.exists(excel_file):
         print(f"Error: File {excel_file} does not exist.")
         return
     
-    result = excel_to_csv_players_only(excel_file, output_file)
+    matchday_number = extract_matchday_number(excel_file)
     
-    if result:
-        print(f"\n Conversion completed successfully!")
-        print(f"CSV file available: {result}")
-    else:
-        print("\n Conversion failed.")
+    output_file = f"matchday{matchday_number}.csv"
+
+    excel_to_csv_players_only(excel_file, output_file)
 
 if __name__ == "__main__":
     main()
