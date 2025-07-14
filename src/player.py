@@ -1,6 +1,6 @@
 from typing import Dict, Optional
-from playerstats import PlayerStats
-from role import Role
+from src.playerstats import PlayerStats
+from src.role import Role
 
 class Player:
     """

@@ -1,8 +1,8 @@
 import sys
 import time
 from pathlib import Path
-from loader import setup_complete_teams
-from season import Season
+from src.loader import setup_complete_teams
+from src.season import Season
 
 def print_banner():
     """

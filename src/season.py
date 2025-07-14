@@ -1,5 +1,5 @@
 from typing import List, Dict
-from team import Team
+from src.team import Team
 
 class SeasonTable:
     """

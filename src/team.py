@@ -1,6 +1,6 @@
 from typing import List, Dict
-from player import Player
-from role import Role
+from src.player import Player
+from src.role import Role
 
 class Team:
     """

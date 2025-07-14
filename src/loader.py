@@ -2,8 +2,8 @@ import json
 import pandas as pd
 from typing import List, Dict
 from pathlib import Path
-from team import Team
-from player import Player
+from src.team import Team
+from src.player import Player
 
 def create_name_to_code_mapping(csv_file: str) -> Dict[str, int]:
     """
