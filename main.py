@@ -120,11 +120,8 @@ def main():
         print(f"Configuration error: {e}")
         sys.exit(1)
     
-
-    
     except Exception as e:
-        print(f"❌ Errore imprevisto: {e}")
-        print("Controlla i file di dati e riprova.")
+        print(f"Unexpected error: {e}")
         sys.exit(1)
 
 def save_season_results(season: Season, summary: dict):
