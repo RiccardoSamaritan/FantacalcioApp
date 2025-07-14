@@ -1,6 +1,8 @@
 # Fantacalcio App
 
-The idea behind this project is to scrape data from [Fantacalcio Official Website](https://www.fantacalcio.it/voti-fantacalcio-serie-a) and use it to implement a python software able to simulate a Fantacalcio season. The app takes as input a given number of teams (usually a multiple of 2 in a range between 8 and 12) with 25 players (3 goalkeepers, 8 defenders, 8 midfielders and 6 forwards), which is the most common format used in the game (anyway it could be changed as you prefer). 
+This is a Python-based Fantacalcio (Italian fantasy football) simulation application. The project scrapes data from the [Fantacalcio Official Website](https://www.fantacalcio.it/voti-fantacalcio-serie-a) and simulates fantasy football seasons with automatic player selection based on performance metrics.
+
+The app takes as input a given number of teams (usually a multiple of 2 in a range between 8 and 12) with 25 players (3 goalkeepers, 8 defenders, 8 midfielders and 6 forwards), which is the most common format used in the game. 
 
 ## Game Rules
 
@@ -49,9 +51,42 @@ If two or more teams finish with the same number of points in the standings, the
   - Goal difference
   - Head-to-head ranking (direct encounters)
 
+## Installation and Setup
+
+### Development Environment
+
+1. **Create and activate virtual environment:**
+   ```bash
+   python -m venv fantacalcio_env
+   source fantacalcio_env/bin/activate  # Linux/macOS
+   # or
+   fantacalcio_env\Scripts\activate  # Windows
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+### Main Dependencies
+- `pandas>=2.0.0` - Data processing and CSV handling
+- `send2trash>=1.8.0` - Safe file deletion after processing
+
+## Project Architecture
+
+### Core Classes
+- **Player** (`player.py`): Represents individual players with season statistics and fantavoto calculations
+- **PlayerStats** (`playerstats.py`): Dataclass holding per-matchday statistics (goals, assists, cards, etc.)
+- **Role** (`role.py`): Enum for player positions (Goalkeeper, Defender, Midfielder, Forward)
+
+### Data Processing Pipeline
+1. **Data Collection**: Excel files downloaded from fantacalcio.it containing matchday statistics
+2. **Data Conversion**: `data/dataprocessor.py` converts Excel files to CSV format with automatic team detection
+3. **Data Structure**: CSV files named `matchday{N}.csv` containing all player statistics per matchday
+
 ## Data Retrieval 
 
-Download Excel files from [Fantacalcio.it](https://www.fantacalcio.it/voti-fantacalcio-serie-a). Be sure to select the season that you want to simulate and to download data for each matchday from 1 to 38.\
+Download Excel files from [Fantacalcio.it](https://www.fantacalcio.it/voti-fantacalcio-serie-a). Be sure to select the season that you want to simulate and to download data for each matchday from 1 to 38.
 Put the downloaded files into the "data" folder in order to be ready for the data processing.
 
 ## Data Processing
@@ -69,24 +104,22 @@ This project includes a Python script (`data/dataprocessor.py`) to convert the o
 - **Output**: Saves the cleaned data in a CSV file named `matchday{i}.csv`, where `i` is the matchday number.
 #### Usage:
 
-1. **Install dependencies:**
+1. **Single file conversion:**
    ```bash
-   pip install -r requirements.txt
+   python data/dataprocessor.py Voti_Fantacalcio_Stagione_2024_25_Giornata_1.xlsx
    ```
 
 2. **Batch conversion (Linux/macOS):**
    ```bash
-   #!/bin/bash
    for i in {1..38}; do
-       python3 dataprocessor.py Voti_Fantacalcio_Stagione_2024_25_Giornata_${i}.xlsx
+       python data/dataprocessor.py Voti_Fantacalcio_Stagione_2024_25_Giornata_${i}.xlsx
    done
    ```
 
 3. **Batch conversion (Windows):**
-   ```batch
-   @echo off
-   for /L %%i in (1,1,38) do (
-       python3 dataprocessor.py Voti_Fantacalcio_Stagione_2024_25_Giornata_%%{i}.xlsx
+   ```cmd
+   for /L %i in (1,1,38) do (
+       python data/dataprocessor.py Voti_Fantacalcio_Stagione_2024_25_Giornata_%i.xlsx
    )
    ```
 
@@ -99,7 +132,31 @@ Atalanta,4947,C,Brescianini,8,2,0,0,0,0,0,0,0,0
 Bologna,133,P,Skorupski,6.5,0,0,0,0,0,0,0,0,0
 ```
 
+## Game Logic Implementation
 
-  
-  
+### Formation System
+- **Fixed 4-3-3 formation**: 1 goalkeeper, 4 defenders, 3 midfielders, 3 forwards
+- **Automatic player selection**: Players are selected based on highest "fantavoto" (fantasy score)
+- **Season simulation**: 38 matchdays with a scoring systems based summatory of player's "fantavoto" for each matchday.
 
+### Fantavoto Calculation
+The fantasy score calculation (`Player.calculate_fantavoto()`) includes:
+- **Base rating**: Player's match rating
+- **Goals**: +3 points each
+- **Assists**: +1 point each
+- **Missed penalties**: -3 points each
+- **Saved penalties**: +3 points each (goalkeepers only)
+- **Yellow cards**: -0.5 points each
+- **Red cards**: -1 point each
+- **Own goals**: -2 points each
+- **Clean sheet bonus**: +1 point (goalkeepers only)
+- **Goals conceded**: -1 point each (goalkeepers only)
+
+### Data Structure Details
+- **Player Statistics**: Ratings with "*" are converted to 0.0 (injured/suspended players)
+- **Player Codes**: Unique identifiers (`cod`) linking to real Serie A players
+- **Matchday Tracking**: Statistics are stored per matchday for season-long analysis
+
+## Testing
+
+The project includes `test_teams.json` with sample team configurations containing 8 teams of 25 players each (3 goalkeepers, 8 defenders, 8 midfielders, 6 forwards), referenced by player codes.
