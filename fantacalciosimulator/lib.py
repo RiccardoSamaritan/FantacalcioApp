@@ -3,7 +3,7 @@ Fantacalcio Simulator Library - Simplified API
 """
 
 from .loader import setup_complete_teams, load_teams_from_csv, load_teams_from_dataframe, populate_teams_with_players, load_all_matchday_stats
-from .probabilistic_season import ProbabilisticSeason
+from .probabilisticseason import ProbabilisticSeason
 from typing import List, Dict, Optional
 import logging
 import pandas as pd

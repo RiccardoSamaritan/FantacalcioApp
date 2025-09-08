@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "fantacalciosimulator"
-version = "0.1.1"
+version = "0.1.2"
 license = {file = "LICENSE"}
 description = "A python tool to simulate an entire Fantacalcio season"
 keywords = ["fantacalcio", "simulation", "football", "fantasy football"]
@@ -29,7 +29,7 @@ requires-python = ">=3.8"
 Repository = "https://github.com/RiccardoSamaritan/FantacalcioSimulator"
 
 [tool.setuptools.packages]
-find = { where = ["src"] }
+find = { where = ["."], include = ["fantacalciosimulator"] }
 
 
 

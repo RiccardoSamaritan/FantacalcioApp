@@ -18,13 +18,13 @@ from .lib import (
 )
 
 from .loader import setup_complete_teams
-from .probabilistic_season import ProbabilisticSeason
+from .probabilisticseason import ProbabilisticSeason
 from .team import Team
 from .player import Player
 from .role import Role
 from .playerstats import PlayerStats
 
-__version__ = "0.1.0"
+__version__ = "0.1.2"
 __author__ = "Riccardo Samaritan"
 __email__ = "riccardo.samaritan@gmail.com"
 
