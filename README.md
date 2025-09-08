@@ -1,19 +1,35 @@
-# Fantacalcio App
+[![PyPI Version][pypi-version-shield]][pypi-url]
+[![Forks][forks-shield]][forks-url]
+[![Stars][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![License][license-shield]][license-url]
 
-This is a Python-based Fantacalcio (Italian fantasy football) simulation application. The project scrapes data from the [Fantacalcio Official Website](https://www.fantacalcio.it/voti-fantacalcio-serie-a) and simulates fantasy football seasons with automatic player selection based on performance metrics.
+# About
+
+A comprehensive Python library for simulating Italian fantasy football (Fantacalcio) seasons with probabilistic algorithms, multi-season support, and flexible team management.
+
+> [!NOTE]
+> This library is designed to support data science and machine learning projects in the fantasy football domain. It provides realistic season simulations and statistical analysis tools for research, not to replace the original game experience.
+
+# Features
+
+- **Multi-Season Support**: Simulate different seasons (2024-25, 2023-24, 2022-23, 2021-22) with automatic data directory management
+- **Multiple Input Formats**: Load teams from JSON, CSV files, or pandas DataFrames
+- **Probabilistic Simulation**: Probabilistic algorithms eliminate luck factor for realistic season outcomes
+- **Flexible Configuration**: Support for various team compositions and formation rules.
 
 The app takes as input a given number of teams (usually a multiple of 2 in a range between 8 and 12) with 25 players (3 goalkeepers, 8 defenders, 8 midfielders and 6 forwards), which is the most common format used in the game. 
 
-## Game Rules
+# Game Rules
 
-### Formation
+## Formation
 
 To simplify the implementation, the following rules have been applied to fantasy football by default:
-  - The only allowed formation is 4-3-3, which means 1 goalkeeper, 4 defenders, 3 midfielders and 3 forwards. If there are not enough players in a role with a valid vote, a player         with a null vote will be fielded anyway.
+  - The only allowed formation is 4-3-3, which means 1 goalkeeper, 4 defenders, 3 midfielders and 3 forwards. If there are not enough players in a role with a valid vote, a player with a null vote will be fielded anyway.
   
   - The user doesn't field players; instead, they are automatically selected based on the highest "fantavoto", while respecting positional requirements.
 
-### Bonus and Malus
+## Bonus and Malus
   The following bonus and malus are applied to a player's vote in order to calculate his "fantavoto":
    - +3 for each goal or penalty scored;
    - +1 for each assist;
@@ -25,7 +41,7 @@ To simplify the implementation, the following rules have been applied to fantasy
    - -2 for each autogoal;
    - +1 if he keeps a clean sheet (applied only to goalkeepers).
 
-### Defense Modifier
+## Defense Modifier
   The defense modifier is used, which awards bonus points to the team based on the average rating of the 4 defenders:
    - If the average rating is < 6, bonus +1
    - If the average rating is ≥ 6 and < 6.25, bonus +2
@@ -36,112 +52,163 @@ To simplify the implementation, the following rules have been applied to fantasy
    - If the average rating is ≥ 7.25, bonus +7
   The modifier is applied only if 4 defenders are fielded.
 
-## Installation and Setup
+# Installation
 
-### Development Environment
+Before installing the package, make sure you have **`Python 3.8` or higher** installed on your system.
+In case you want to avoid any conflicts with your system's Python packages, you might want to create (and activate) a dedicated virtual environment:
 
-1. **Create and activate virtual environment:**
-   ```bash
-   python -m venv fantacalcio_env
-   source fantacalcio_env/bin/activate  # Linux/macOS
-   # or
-   fantacalcio_env\Scripts\activate  # Windows
-   ```
-
-2. **Install dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-### Main Dependencies
-- `pandas>=2.0.0` - Data processing and CSV handling
-- `send2trash>=1.8.0` - Safe file deletion after processing
-
-## Project Architecture
-
-### Core Classes
-- **Player** (`player.py`): Represents individual players with season statistics and fantavoto calculations
-- **PlayerStats** (`playerstats.py`): Dataclass holding per-matchday statistics (goals, assists, cards, etc.)
-- **Role** (`role.py`): Enum for player positions (Goalkeeper, Defender, Midfielder, Forward)
-
-### Data Processing Pipeline
-1. **Data Collection**: Excel files downloaded from fantacalcio.it containing matchday statistics
-2. **Data Conversion**: `data/dataprocessor.py` converts Excel files to CSV format with automatic team detection
-3. **Data Structure**: CSV files named `matchday{N}.csv` containing all player statistics per matchday
-
-## Data Retrieval 
-
-Download Excel files from [Fantacalcio.it](https://www.fantacalcio.it/voti-fantacalcio-serie-a). Be sure to select the season that you want to simulate and to download data for each matchday from 1 to 38.
-Put the downloaded files into the "data" folder in order to be ready for the data processing.
-
-## Data Processing
-
-### Excel to CSV Converter
-
-This project includes a Python script (`data/dataprocessor.py`) to convert the official Excel files from Fantacalcio.it into clean CSV format for easier data processing.
-
-#### Features:
-- **Automatic team detection**: Identifies team names from the Excel structure.
-- **Matchday extraction**: Automatically extracts the matchday number from the filename.
-- **Player-only extraction**: Filters out headers, titles, and coaches (excludes "ALL" role).
-- **Complete data preservation**: Extracts all player statistics (goals, assists, cards, etc.).
-- **Auto-cleanup**: Moves processed Excel files to trash after successful conversion.
-- **Output**: Saves the cleaned data in a CSV file named `matchday{i}.csv`, where `i` is the matchday number.
-#### Usage:
-
-1. **Single file conversion:**
-   ```bash
-   python data/dataprocessor.py Voti_Fantacalcio_Stagione_2024_25_Giornata_1.xlsx
-   ```
-
-2. **Batch conversion (Linux/macOS):**
-   ```bash
-   for i in {1..38}; do
-       python data/dataprocessor.py Voti_Fantacalcio_Stagione_2024_25_Giornata_${i}.xlsx
-   done
-   ```
-
-3. **Batch conversion (Windows):**
-   ```cmd
-   for /L %i in (1,1,38) do (
-       python data/dataprocessor.py Voti_Fantacalcio_Stagione_2024_25_Giornata_%i.xlsx
-   )
-   ```
-
-#### Example Output:
-```csv
-Team,Cod,Role,Name,Rating,Gf,Gs,Rp,Rs,Rf,Au,Amm,Esp,Ass
-Atalanta,2792,P,Musso,6,0,0,0,0,0,0,0,0,0
-Atalanta,554,D,Zappacosta,6.5,0,0,0,0,0,0,0,0,0
-Atalanta,4947,C,Brescianini,8,2,0,0,0,0,0,0,0,0
-Bologna,133,P,Skorupski,6.5,0,0,0,0,0,0,0,0,0
+```bash
+python -m venv /path/to/fantacalciosimulator_env
+source /path/to/fantacalciosimulator_env/bin/activate
 ```
 
-## Game Logic Implementation
+## Install via PIP
 
-### Formation System
-- **Fixed 4-3-3 formation**: 1 goalkeeper, 4 defenders, 3 midfielders, 3 forwards
-- **Automatic player selection**: Players are selected based on highest "fantavoto" (fantasy score)
-- **Season simulation**: 38 matchdays with a scoring systems based summatory of player's "fantavoto" for each matchday.
+You can install the package from the `Python Package Index (PyPI)` using pip:
 
-### Fantavoto Calculation
-The fantasy score calculation (`Player.calculate_fantavoto()`) includes:
-- **Base rating**: Player's match rating
-- **Goals**: +3 points each
-- **Assists**: +1 point each
-- **Missed penalties**: -3 points each
-- **Saved penalties**: +3 points each (goalkeepers only)
-- **Yellow cards**: -0.5 points each
-- **Red cards**: -1 point each
-- **Own goals**: -2 points each
-- **Clean sheet bonus**: +1 point (goalkeepers only)
-- **Goals conceded**: -1 point each (goalkeepers only)
+```bash
+pip install fantacalciosimulator
+```
+## Installing from source
 
-### Data Structure Details
-- **Player Statistics**: Ratings with "*" are converted to 0.0 (injured/suspended players)
-- **Player Codes**: Unique identifiers (`cod`) linking to real Serie A players
-- **Matchday Tracking**: Statistics are stored per matchday for season-long analysis
+1. Clone the repository:
+   
+   ```bash
+   git clone https://github.com/RiccardoSamaritan/FantacalcioSimulator
+   ```
 
-## Testing
+2. Move into the repository directory and install the package with:
+   
+   ```bash
+   cd FantacalcioSimulator/
+   pip install .
+   ```
 
-The project includes `test_teams.json` with sample team configurations containing 8 teams of 25 players each (3 goalkeepers, 8 defenders, 8 midfielders, 6 forwards), referenced by player codes.
+# Quick Start
+
+## Basic Usage
+
+```python
+from fantacalciosimulator import FantacalcioSimulator
+
+# Initialize simulator with season and teams file
+simulator = FantacalcioSimulator(
+    season_year="2024-25",
+    teams_file="teams_input_example.csv"
+)
+
+# Simulate complete season
+results = simulator.simulate_season("My Fantasy League 2024-25")
+
+# Display final table
+print(simulator.get_final_table())
+```
+
+## Using Different Input Formats
+
+### CSV Format
+```python
+# CSV with format: team_name,player_name,role
+simulator = FantacalcioSimulator("2024-25", "teams.csv")
+```
+
+### JSON Format
+```python
+# JSON with nested team structure
+simulator = FantacalcioSimulator("2024-25", "teams.json")
+```
+
+### Pandas DataFrame
+```python
+import pandas as pd
+from fantacalciosimulator import FantacalcioSimulator
+
+df = pd.read_csv("teams.csv")
+simulator = FantacalcioSimulator.from_dataframe("2024-25", df)
+```
+
+## Configuration Options
+
+```python
+# Disable defense modifier
+simulator = FantacalcioSimulator(
+    season_year="2024-25",
+    teams_file="teams.csv",
+    defense_modifier=False
+)
+
+# Custom data directory
+simulator = FantacalcioSimulator(
+    season_year="2024-25", 
+    teams_file="teams.csv",
+    data_dir="custom_data_path"
+)
+```
+
+## Advanced Usage Examples
+
+### Complete Analysis Workflow
+```python
+from fantacalciosimulator import FantacalcioSimulator
+
+# Initialize and simulate
+simulator = FantacalcioSimulator("2024-25", "teams.csv")
+results = simulator.simulate_season("My League")
+
+# Get detailed team information
+teams_info = simulator.get_teams_info()
+for team in teams_info:
+    print(f"{team['name']}: {team['total_players']} players, Valid: {team['valid_composition']}")
+
+# Analyze specific team progression
+team_progression = simulator.get_team_progression("Team Alpha")
+print(f"Final points: {team_progression['final_total']}")
+
+# Display championship results
+print(f"Champion: {results['champion']} with {results['champion_points']} points")
+print(f"Highest fantasy score: {results['highest_fantasy_score']} by {results['highest_fantasy_team']}")
+```
+
+### Quick Simulation Function
+```python
+from fantacalciosimulator import quick_simulation
+
+# One-line season simulation
+results = quick_simulation(
+    season_year="2024-25",
+    teams_file="teams.csv",
+    season_name="Championship 2025"
+)
+```
+
+### Team Validation
+```python
+from fantacalciosimulator import load_and_validate_teams
+
+# Validate teams before simulation
+teams_info = load_and_validate_teams("2024-25", "teams.csv")
+valid_teams = [t for t in teams_info if t['valid_composition']]
+print(f"{len(valid_teams)} valid teams out of {len(teams_info)}")
+```
+
+# Data Sources
+ 
+**`FantacalcioSimulator`** matchday statistics are taken from [Fantacalcio.it](https://www.fantacalcio.it/voti-fantacalcio-serie-a), one of the most popular Italian fantasy football platforms.
+
+Other useful resources from the same site are:
+- [Player fantasy market value](https://www.fantacalcio.it/quotazioni-fantacalcio)
+- [Player statistics](https://www.fantacalcio.it/statistiche-serie-a)
+- [Goalkeeper grid](https://www.fantacalcio.it/griglia-portieri)
+- [Penalty takers](https://www.fantacalcio.it/rigoristi-serie-a)
+
+<!-- Badge definitions -->
+[pypi-version-shield]: https://img.shields.io/pypi/v/fantacalciosimulator?style=for-the-badge&logo=pypi&logoColor=white
+[pypi-url]: https://pypi.org/project/fantacalciosimulator/
+[forks-shield]: https://img.shields.io/github/forks/RiccardoSamaritan/FantacalcioSimulator?style=for-the-badge
+[forks-url]: https://github.com/RiccardoSamaritan/FantacalcioSimulator/network/members
+[stars-shield]: https://img.shields.io/github/stars/RiccardoSamaritan/FantacalcioSimulator?style=for-the-badge
+[stars-url]: https://github.com/RiccardoSamaritan/FantacalcioSimulator/stargazers
+[issues-shield]: https://img.shields.io/github/issues/RiccardoSamaritan/FantacalcioSimulator?style=for-the-badge
+[issues-url]: https://github.com/RiccardoSamaritan/FantacalcioSimulator/issues
+[license-shield]: https://img.shields.io/github/license/RiccardoSamaritan/FantacalcioSimulator?style=for-the-badge
+[license-url]: https://github.com/RiccardoSamaritan/FantacalcioSimulator/blob/main/LICENSE

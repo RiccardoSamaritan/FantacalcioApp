@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fantacalciosimulator"
+version = "0.1.1"
+license = {file = "LICENSE"}
+description = "A python tool to simulate an entire Fantacalcio season"
+keywords = ["fantacalcio", "simulation", "football", "fantasy football"]
+authors = [{name="Riccardo Samaritan", email="riccardo.samaritan@gmail.com"}]
+readme = "README.md"
+dependencies = [
+    "pandas>=2.0.0",
+    "send2trash>=1.8.0",
+]
+classifiers = [
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9", 
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+requires-python = ">=3.8"
+[project.urls]
+Repository = "https://github.com/RiccardoSamaritan/FantacalcioSimulator"
+
+[tool.setuptools.packages]
+find = { where = ["src"] }
+
+
+
+

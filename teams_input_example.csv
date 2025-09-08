@@ -1,0 +1,201 @@
+team_name,player_name,role
+Team Alpha,Carnesecchi (Atalanta),goalkeeper
+Team Alpha,Turati (Monza),goalkeeper
+Team Alpha,Caprile (Cagliari),goalkeeper
+Team Alpha,Hernandez T. (Milan),defender
+Team Alpha,Djimsiti (Atalanta),defender
+Team Alpha,Dorgu (Lecce),defender
+Team Alpha,Zappa (Cagliari),defender
+Team Alpha,Pezzella Giu. (Empoli),defender
+Team Alpha,Viti (Empoli),defender
+Team Alpha,Ismajli (Empoli),defender
+Team Alpha,Coco (Torino),defender
+Team Alpha,Reijnders (Milan),midfielder
+Team Alpha,De Roon (Atalanta),midfielder
+Team Alpha,Fazzini (Empoli),midfielder
+Team Alpha,Henderson L. (Empoli),midfielder
+Team Alpha,Gyasi (Empoli),midfielder
+Team Alpha,Ricci S. (Torino),midfielder
+Team Alpha,Bondo (Monza),midfielder
+Team Alpha,Gaetano (Cagliari),midfielder
+Team Alpha,Retegui (Atalanta),forward
+Team Alpha,Leao (Milan),forward
+Team Alpha,Abraham (Milan),forward
+Team Alpha,Esposito Se. (Empoli),forward
+Team Alpha,Colombo (Empoli),forward
+Team Alpha,Krstovic (Lecce),forward
+Team Beta,Sommer (Inter),goalkeeper
+Team Beta,De Gea (Fiorentina),goalkeeper
+Team Beta,Falcone (Lecce),goalkeeper
+Team Beta,Bastoni (Inter),defender
+Team Beta,Pavard (Inter),defender
+Team Beta,Gosens (Fiorentina),defender
+Team Beta,Dodo' (Fiorentina),defender
+Team Beta,Ranieri L. (Fiorentina),defender
+Team Beta,Baschirotto (Lecce),defender
+Team Beta,Guilbert (Lecce),defender
+Team Beta,Masina (Torino),defender
+Team Beta,Barella (Inter),midfielder
+Team Beta,Mkhitaryan (Inter),midfielder
+Team Beta,Adli (Fiorentina),midfielder
+Team Beta,Bove (Fiorentina),midfielder
+Team Beta,Cataldi (Fiorentina),midfielder
+Team Beta,Ramadani (Lecce),midfielder
+Team Beta,Coulibaly L. (Lecce),midfielder
+Team Beta,Ilic (Torino),midfielder
+Team Beta,Thuram (Inter),forward
+Team Beta,Kean (Fiorentina),forward
+Team Beta,Gudmundsson A. (Fiorentina),forward
+Team Beta,Kouame' (Fiorentina),forward
+Team Beta,Pierotti (Lecce),forward
+Team Beta,Rebic (Lecce),forward
+Team Gamma,Meret (Napoli),goalkeeper
+Team Gamma,Svilar (Roma),goalkeeper
+Team Gamma,Terracciano (Fiorentina),goalkeeper
+Team Gamma,Di Lorenzo (Napoli),defender
+Team Gamma,Olivera (Napoli),defender
+Team Gamma,Mancini (Roma),defender
+Team Gamma,N'Dicka (Roma),defender
+Team Gamma,Angelino (Roma),defender
+Team Gamma,Cambiaso (Juventus),defender
+Team Gamma,Gatti (Juventus),defender
+Team Gamma,Bijol (Udinese),defender
+Team Gamma,Lobotka (Napoli),midfielder
+Team Gamma,McTominay (Napoli),midfielder
+Team Gamma,Pellegrini Lo. (Roma),midfielder
+Team Gamma,Pisilli (Roma),midfielder
+Team Gamma,Koopmeiners (Juventus),midfielder
+Team Gamma,Weah (Juventus),midfielder
+Team Gamma,Lovric (Udinese),midfielder
+Team Gamma,Thauvin (Udinese),midfielder
+Team Gamma,Kvaratskhelia (Napoli),forward
+Team Gamma,Lukaku (Napoli),forward
+Team Gamma,Dybala (Roma),forward
+Team Gamma,Dovbyk (Roma),forward
+Team Gamma,Gonzalez N. (Juventus),forward
+Team Gamma,Lucca (Udinese),forward
+Team Delta,Martinez Jo. (Inter),goalkeeper
+Team Delta,Milinkovic-Savic V. (Torino),goalkeeper
+Team Delta,Okoye (Udinese),goalkeeper
+Team Delta,Dimarco (Inter),defender
+Team Delta,Acerbi (Inter),defender
+Team Delta,Romagnoli (Lazio),defender
+Team Delta,Tavares N. (Lazio),defender
+Team Delta,Gila (Lazio),defender
+Team Delta,Vojvoda (Torino),defender
+Team Delta,Zemura (Udinese),defender
+Team Delta,Ehizibue (Udinese),defender
+Team Delta,Calhanoglu (Inter),midfielder
+Team Delta,Zaccagni (Lazio),midfielder
+Team Delta,Guendouzi (Lazio),midfielder
+Team Delta,Rovella (Lazio),midfielder
+Team Delta,Locatelli (Juventus),midfielder
+Team Delta,Vlasic (Torino),midfielder
+Team Delta,Payero (Udinese),midfielder
+Team Delta,Fofana Y. (Milan),midfielder
+Team Delta,Martinez L. (Inter),forward
+Team Delta,Vlahovic (Juventus),forward
+Team Delta,Dia (Lazio),forward
+Team Delta,Castellanos (Lazio),forward
+Team Delta,Adams C. (Torino),forward
+Team Delta,Brenner (Udinese),forward
+Team Epsilon,Leali (Genoa),goalkeeper
+Team Epsilon,Suzuki (Parma),goalkeeper
+Team Epsilon,Montipo' (Verona),goalkeeper
+Team Epsilon,Lucumi' (Bologna),defender
+Team Epsilon,Beukema (Bologna),defender
+Team Epsilon,Cuadrado (Atalanta),defender
+Team Epsilon,Gabbia (Milan),defender
+Team Epsilon,Sergi Roberto (Como),defender
+Team Epsilon,Dossena (Como),defender
+Team Epsilon,Sabelli (Genoa),defender
+Team Epsilon,Martin (Genoa),defender
+Team Epsilon,Freuler (Bologna),midfielder
+Team Epsilon,Ndoye (Bologna),midfielder
+Team Epsilon,Ederson D.s. (Atalanta),midfielder
+Team Epsilon,Bennacer (Milan),midfielder
+Team Epsilon,Strefezza (Como),midfielder
+Team Epsilon,Da Cunha (Como),midfielder
+Team Epsilon,Badelj (Genoa),midfielder
+Team Epsilon,Frendrup (Genoa),midfielder
+Team Epsilon,Castro S. (Bologna),forward
+Team Epsilon,Lookman (Atalanta),forward
+Team Epsilon,Belotti (Como),forward
+Team Epsilon,Cutrone (Como),forward
+Team Epsilon,Pinamonti (Genoa),forward
+Team Epsilon,Zapata D. (Torino),forward
+Squadra Zeta,Audero (Como),goalkeeper
+Squadra Zeta,Joronen (Venezia),goalkeeper
+Squadra Zeta,Radu I. (Venezia),goalkeeper
+Squadra Zeta,Balogh (Parma),defender
+Squadra Zeta,Coulibaly W. (Parma),defender
+Squadra Zeta,Delprato (Parma),defender
+Squadra Zeta,Mina (Cagliari),defender
+Squadra Zeta,Luperto (Cagliari),defender
+Squadra Zeta,Idzes (Venezia),defender
+Squadra Zeta,Haps (Venezia),defender
+Squadra Zeta,Kyriakopoulos (Monza),defender
+Squadra Zeta,Man (Parma),midfielder
+Squadra Zeta,Bernabe' (Parma),midfielder
+Squadra Zeta,Sohm (Parma),midfielder
+Squadra Zeta,Viola (Cagliari),midfielder
+Squadra Zeta,Nicolussi Caviglia (Venezia),midfielder
+Squadra Zeta,Ellertsson (Venezia),midfielder
+Squadra Zeta,Oristanio (Venezia),midfielder
+Squadra Zeta,Maldini (Monza),midfielder
+Squadra Zeta,Bonny (Parma),forward
+Squadra Zeta,Mihaila (Parma),forward
+Squadra Zeta,Piccoli (Cagliari),forward
+Squadra Zeta,Luvumbo (Cagliari),forward
+Squadra Zeta,Pohjanpalo (Venezia),forward
+Squadra Zeta,Djuric (Monza),forward
+Team Eta,Rossi F. (Atalanta),goalkeeper
+Team Eta,Butez (Como),goalkeeper
+Team Eta,Reina (Como),goalkeeper
+Team Eta,Rrahmani (Napoli),defender
+Team Eta,Izzo (Monza),defender
+Team Eta,Carboni A. (Monza),defender
+Team Eta,Augello (Cagliari),defender
+Team Eta,Zortea (Cagliari),defender
+Team Eta,Coppola D. (Verona),defender
+Team Eta,Tchatchoua (Verona),defender
+Team Eta,Schingtienne (Venezia),defender
+Team Eta,Zambo Anguissa (Napoli),midfielder
+Team Eta,Ciurria (Monza),midfielder
+Team Eta,Helgason (Lecce),midfielder
+Team Eta,Deiola (Cagliari),midfielder
+Team Eta,Adopo (Cagliari),midfielder
+Team Eta,Suslov (Verona),midfielder
+Team Eta,Duncan (Venezia),midfielder
+Team Eta,Zerbin (Venezia),midfielder
+Team Eta,Caprari (Monza),forward
+Team Eta,Maric (Venezia),forward
+Team Eta,Pavoletti (Cagliari),forward
+Team Eta,Coman F. (Cagliari),forward
+Team Eta,Tengstedt (Verona),forward
+Team Eta,Mosquera (Verona),forward
+Team Theta,Rui Patricio (Atalanta),goalkeeper
+Team Theta,Musso (Atalanta),goalkeeper
+Team Theta,Kempf (Como),goalkeeper
+Team Theta,Kempf (Como),defender
+Team Theta,Moreno Alb. (Como),defender
+Team Theta,Goldaniga (Como),defender
+Team Theta,Palomino (Cagliari),defender
+Team Theta,Bradaric (Verona),defender
+Team Theta,Ghilardi (Verona),defender
+Team Theta,Dawidowicz (Verona),defender
+Team Theta,Candè (Venezia),defender
+Team Theta,Fadera (Como),midfielder
+Team Theta,Paz N. (Como),midfielder
+Team Theta,Perrone (Como),midfielder
+Team Theta,Makoumbou (Cagliari),midfielder
+Team Theta,Duda (Verona),midfielder
+Team Theta,Kastanos (Verona),midfielder
+Team Theta,Lazovic (Verona),midfielder
+Team Theta,Belahyane (Verona),midfielder
+Team Theta,Douvikas (Como),forward
+Team Theta,Gabrielloni (Como),forward
+Team Theta,Sarr A. (Verona),forward
+Team Theta,Lambourde (Verona),forward
+Team Theta,Gytkjaer (Venezia),forward
+Team Theta,Thorsby (Genoa),forward

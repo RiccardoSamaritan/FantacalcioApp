@@ -1,0 +1,290 @@
+[
+  {
+    "name": "Team Alpha",
+    "goalkeepers": [
+      "Carnesecchi (Atalanta)",
+      "Turati (Monza)",
+      "Caprile (Cagliari)"
+    ],
+    "defenders": [
+      "Hernandez T. (Milan)",
+      "Djimsiti (Atalanta)",
+      "Dorgu (Lecce)",
+      "Zappa (Cagliari)",
+      "Pezzella Giu. (Empoli)",
+      "Viti (Empoli)",
+      "Ismajli (Empoli)",
+      "Coco (Torino)"
+    ],
+    "midfielders": [
+      "Reijnders (Milan)",
+      "De Roon (Atalanta)",
+      "Fazzini (Empoli)",
+      "Henderson L. (Empoli)",
+      "Gyasi (Empoli)",
+      "Ricci S. (Torino)",
+      "Bondo (Monza)",
+      "Gaetano (Cagliari)"
+    ],
+    "forwards": [
+      "Retegui (Atalanta)",
+      "Leao (Milan)",
+      "Abraham (Milan)",
+      "Esposito Se. (Empoli)",
+      "Colombo (Empoli)",
+      "Krstovic (Lecce)"
+    ]
+  },
+  {
+    "name": "Team Beta", 
+    "goalkeepers": [
+      "Sommer (Inter)",
+      "De Gea (Fiorentina)",
+      "Falcone (Lecce)"
+    ],
+    "defenders": [
+      "Bastoni (Inter)",
+      "Pavard (Inter)",
+      "Gosens (Fiorentina)",
+      "Dodo' (Fiorentina)",
+      "Ranieri L. (Fiorentina)",
+      "Baschirotto (Lecce)",
+      "Guilbert (Lecce)",
+      "Masina (Torino)"
+    ],
+    "midfielders": [
+      "Barella (Inter)",
+      "Mkhitaryan (Inter)",
+      "Adli (Fiorentina)",
+      "Bove (Fiorentina)",
+      "Cataldi (Fiorentina)",
+      "Ramadani (Lecce)",
+      "Coulibaly L. (Lecce)",
+      "Ilic (Torino)"
+    ],
+    "forwards": [
+      "Thuram (Inter)",
+      "Kean (Fiorentina)",
+      "Gudmundsson A. (Fiorentina)",
+      "Kouame' (Fiorentina)",
+      "Pierotti (Lecce)",
+      "Rebic (Lecce)"
+    ]
+  },
+  {
+    "name": "Team Gamma",
+    "goalkeepers": [
+      "Meret (Napoli)",
+      "Svilar (Roma)",
+      "Terracciano (Fiorentina)"
+    ],
+    "defenders": [
+      "Di Lorenzo (Napoli)",
+      "Olivera (Napoli)",
+      "Mancini (Roma)",
+      "N'Dicka (Roma)",
+      "Angelino (Roma)",
+      "Cambiaso (Juventus)",
+      "Gatti (Juventus)",
+      "Bijol (Udinese)"
+    ],
+    "midfielders": [
+      "Lobotka (Napoli)",
+      "McTominay (Napoli)",
+      "Pellegrini Lo. (Roma)",
+      "Pisilli (Roma)",
+      "Koopmeiners (Juventus)",
+      "Weah (Juventus)",
+      "Lovric (Udinese)",
+      "Thauvin (Udinese)"
+    ],
+    "forwards": [
+      "Kvaratskhelia (Napoli)",
+      "Lukaku (Napoli)",
+      "Dybala (Roma)",
+      "Dovbyk (Roma)",
+      "Gonzalez N. (Juventus)",
+      "Lucca (Udinese)"
+    ]
+  },
+  {
+    "name": "Team Delta",
+    "goalkeepers": [
+      "Martinez Jo. (Inter)",
+      "Milinkovic-Savic V. (Torino)",
+      "Okoye (Udinese)"
+    ],
+    "defenders": [
+      "Dimarco (Inter)",
+      "Acerbi (Inter)",
+      "Romagnoli (Lazio)",
+      "Tavares N. (Lazio)",
+      "Gila (Lazio)",
+      "Vojvoda (Torino)",
+      "Zemura (Udinese)",
+      "Ehizibue (Udinese)"
+    ],
+    "midfielders": [
+      "Calhanoglu (Inter)",
+      "Zaccagni (Lazio)",
+      "Guendouzi (Lazio)",
+      "Rovella (Lazio)",
+      "Locatelli (Juventus)",
+      "Vlasic (Torino)",
+      "Payero (Udinese)",
+      "Fofana Y. (Milan)"
+    ],
+    "forwards": [
+      "Martinez L. (Inter)",
+      "Vlahovic (Juventus)",
+      "Dia (Lazio)",
+      "Castellanos (Lazio)",
+      "Adams C. (Torino)",
+      "Brenner (Udinese)"
+    ]
+  },
+  {
+    "name": "Team Epsilon",
+    "goalkeepers": [
+      "Leali (Genoa)",
+      "Suzuki (Parma)",
+      "Montipo' (Verona)"
+    ],
+    "defenders": [
+      "Lucumi' (Bologna)",
+      "Beukema (Bologna)",
+      "Cuadrado (Atalanta)",
+      "Gabbia (Milan)",
+      "Sergi Roberto (Como)",
+      "Dossena (Como)",
+      "Sabelli (Genoa)",
+      "Martin (Genoa)"
+    ],
+    "midfielders": [
+      "Freuler (Bologna)",
+      "Ndoye (Bologna)",
+      "Ederson D.s. (Atalanta)",
+      "Bennacer (Milan)",
+      "Strefezza (Como)",
+      "Da Cunha (Como)",
+      "Badelj (Genoa)",
+      "Frendrup (Genoa)"
+    ],
+    "forwards": [
+      "Castro S. (Bologna)",
+      "Lookman (Atalanta)",
+      "Belotti (Como)",
+      "Cutrone (Como)",
+      "Pinamonti (Genoa)",
+      "Zapata D. (Torino)"
+    ]
+  },
+  {
+    "name": "Squadra Zeta",
+    "goalkeepers": [
+      "Audero (Como)",
+      "Joronen (Venezia)",
+      "Radu I. (Venezia)"
+    ],
+    "defenders": [
+      "Balogh (Parma)",
+      "Coulibaly W. (Parma)",
+      "Delprato (Parma)",
+      "Mina (Cagliari)",
+      "Luperto (Cagliari)",
+      "Idzes (Venezia)",
+      "Haps (Venezia)",
+      "Kyriakopoulos (Monza)"
+    ],
+    "midfielders": [
+      "Man (Parma)",
+      "Bernabe' (Parma)",
+      "Sohm (Parma)",
+      "Viola (Cagliari)",
+      "Nicolussi Caviglia (Venezia)",
+      "Ellertsson (Venezia)",
+      "Oristanio (Venezia)",
+      "Maldini (Monza)"
+    ],
+    "forwards": [
+      "Bonny (Parma)",
+      "Mihaila (Parma)",
+      "Piccoli (Cagliari)",
+      "Luvumbo (Cagliari)",
+      "Pohjanpalo (Venezia)",
+      "Djuric (Monza)"
+    ]
+  },
+  {
+    "name": "Team Eta",
+    "goalkeepers": [
+      "Rossi F. (Atalanta)",
+      "Butez (Como)",
+      "Reina (Como)"
+    ],
+    "defenders": [
+      "Rrahmani (Napoli)",
+      "Izzo (Monza)",
+      "Carboni A. (Monza)",
+      "Augello (Cagliari)",
+      "Zortea (Cagliari)",
+      "Coppola D. (Verona)",
+      "Tchatchoua (Verona)",
+      "Schingtienne (Venezia)"
+    ],
+    "midfielders": [
+      "Zambo Anguissa (Napoli)",
+      "Ciurria (Monza)",
+      "Helgason (Lecce)",
+      "Deiola (Cagliari)",
+      "Adopo (Cagliari)",
+      "Suslov (Verona)",
+      "Duncan (Venezia)",
+      "Zerbin (Venezia)"
+    ],
+    "forwards": [
+      "Caprari (Monza)",
+      "Maric (Venezia)",
+      "Pavoletti (Cagliari)",
+      "Coman F. (Cagliari)",
+      "Tengstedt (Verona)",
+      "Mosquera (Verona)"
+    ]
+  },
+  {
+    "name": "Team Theta",
+    "goalkeepers": [
+      "Rui Patricio (Atalanta)",
+      "Musso (Atalanta)",
+      "Kempf (Como)"
+    ],
+    "defenders": [
+      "Kempf (Como)",
+      "Moreno Alb. (Como)",
+      "Goldaniga (Como)",
+      "Palomino (Cagliari)",
+      "Bradaric (Verona)",
+      "Ghilardi (Verona)",
+      "Dawidowicz (Verona)",
+      "Candè (Venezia)"
+    ],
+    "midfielders": [
+      "Fadera (Como)",
+      "Paz N. (Como)",
+      "Perrone (Como)",
+      "Makoumbou (Cagliari)",
+      "Duda (Verona)",
+      "Kastanos (Verona)",
+      "Lazovic (Verona)",
+      "Belahyane (Verona)"
+    ],
+    "forwards": [
+      "Douvikas (Como)",
+      "Gabrielloni (Como)",
+      "Sarr A. (Verona)",
+      "Lambourde (Verona)",
+      "Gytkjaer (Venezia)",
+      "Thorsby (Genoa)"
+    ]
+  }
+]
